@@ -2,23 +2,25 @@
 
 
 
-    Private Sub numberTxt_TextChanged(sender As Object, e As EventArgs) Handles numberTxt.TextChanged
+    Private Sub numberTxt_TextChanged(sender As Object, e As EventArgs) Handles letterInputTxt.TextChanged
 
-        Dim inputNumber As Integer
+        Dim letter As String
 
+        letter = letterInputTxt.Text.ToLower()
 
-        If Integer.TryParse(numberTxt.Text, inputNumber) Then
-            If inputNumber > 1100 Then
+        If letter = "b" Then
+            typeTxt.Text = "Battleship"
 
-                typeTxt.Text = "Civilian"
+        ElseIf letter = "c" Then
+            typeTxt.Text = "Cruiser"
 
-            ElseIf inputNumber >= 500 And inputNumber <= 1100 Then
-                typeTxt.Text = "Military"
+        ElseIf letter = "d" Then
+            typeTxt.Text = "Destroyer"
 
-            Else
-                typeTxt.Text = "Bird"
-
-            End If
+        ElseIf letter = "f" Then
+            typeTxt.Text = "Frigate"
+        Else
+            typeTxt.Text = "No info"
         End If
 
 
@@ -27,15 +29,17 @@
 
     End Sub
 
-    Private Sub numberTxt_KeyPress(sender As Object, e As KeyPressEventArgs) Handles numberTxt.KeyPress
+    Private Sub numberTxt_KeyPress(sender As Object, e As KeyPressEventArgs) Handles letterInputTxt.KeyPress
         If Char.IsControl(e.KeyChar) Then
             Return
         End If
 
-        If Char.IsDigit(e.KeyChar) Then
+        If Char.IsLetter(e.KeyChar) Then
             Return
         End If
 
         e.Handled = True
     End Sub
+
+
 End Class

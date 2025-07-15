@@ -25,7 +25,7 @@ Partial Class Form1
         Label1 = New Label()
         typeTxt = New TextBox()
         Label2 = New Label()
-        numberTxt = New TextBox()
+        letterInputTxt = New TextBox()
         SuspendLayout()
         ' 
         ' Label1
@@ -33,9 +33,9 @@ Partial Class Form1
         Label1.AutoSize = True
         Label1.Location = New Point(86, 63)
         Label1.Name = "Label1"
-        Label1.Size = New Size(54, 15)
+        Label1.Size = New Size(40, 15)
         Label1.TabIndex = 0
-        Label1.Text = "Number:"
+        Label1.Text = "Letter:"
         ' 
         ' typeTxt
         ' 
@@ -54,12 +54,12 @@ Partial Class Form1
         Label2.TabIndex = 3
         Label2.Text = "Type:"
         ' 
-        ' numberTxt
+        ' letterInputTxt
         ' 
-        numberTxt.Location = New Point(146, 60)
-        numberTxt.Name = "numberTxt"
-        numberTxt.Size = New Size(117, 23)
-        numberTxt.TabIndex = 1
+        letterInputTxt.Location = New Point(146, 60)
+        letterInputTxt.Name = "letterInputTxt"
+        letterInputTxt.Size = New Size(117, 23)
+        letterInputTxt.TabIndex = 1
         ' 
         ' Form1
         ' 
@@ -68,10 +68,10 @@ Partial Class Form1
         ClientSize = New Size(347, 246)
         Controls.Add(Label2)
         Controls.Add(typeTxt)
-        Controls.Add(numberTxt)
+        Controls.Add(letterInputTxt)
         Controls.Add(Label1)
         Name = "Form1"
-        Text = "AirCraft"
+        Text = "Ship1"
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -79,6 +79,6 @@ Partial Class Form1
     Friend WithEvents Label1 As Label
     Friend WithEvents typeTxt As TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents numberTxt As TextBox
+    Friend WithEvents letterInputTxt As TextBox
 
 End Class

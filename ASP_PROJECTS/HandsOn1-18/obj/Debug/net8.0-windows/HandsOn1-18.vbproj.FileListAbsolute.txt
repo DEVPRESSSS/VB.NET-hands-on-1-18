@@ -14,3 +14,4 @@ D:\ASP_PROJECTS\HandsOn1-18\obj\Debug\net8.0-windows\refint\HandsOn1-18.dll
 D:\ASP_PROJECTS\HandsOn1-18\obj\Debug\net8.0-windows\HandsOn1-18.pdb
 D:\ASP_PROJECTS\HandsOn1-18\obj\Debug\net8.0-windows\HandsOn1-18.genruntimeconfig.cache
 D:\ASP_PROJECTS\HandsOn1-18\obj\Debug\net8.0-windows\ref\HandsOn1-18.dll
+D:\ASP_PROJECTS\HandsOn1-18\obj\Debug\net8.0-windows\HandsOn1-18.sourcelink.json

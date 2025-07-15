@@ -1,7 +1,6 @@
 ﻿Public Class Form1
 
 
-
     Private Sub plusBtn_Click(sender As Object, e As EventArgs) Handles plusBtn.Click
 
         Dim firstNum, secondNum, result As Double
@@ -84,7 +83,23 @@
             Return
         End If
 
-        If e.KeyChar = "."c AndAlso Not firstNumTxt.Text.Contains(".") AndAlso Not firstNumTxt.Text.Contains(".") Then
+        If e.KeyChar = "."c AndAlso Not firstNumTxt.Text.Contains(".") Then
+            Return
+        End If
+
+        e.Handled = True
+    End Sub
+
+    Private Sub secondNumberTxt_KeyPress(sender As Object, e As KeyPressEventArgs) Handles secondNumberTxt.KeyPress
+        If Char.IsControl(e.KeyChar) Then
+            Return
+        End If
+
+        If Char.IsDigit(e.KeyChar) Then
+            Return
+        End If
+
+        If e.KeyChar = "."c AndAlso Not secondNumberTxt.Text.Contains(".") Then
             Return
         End If
 

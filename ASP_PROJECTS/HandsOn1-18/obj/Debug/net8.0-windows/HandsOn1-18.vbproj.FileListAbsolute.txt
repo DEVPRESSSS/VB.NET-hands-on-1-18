@@ -1,0 +1,16 @@
+D:\ASP_PROJECTS\HandsOn1-18\bin\Debug\net8.0-windows\HandsOn1-18.exe
+D:\ASP_PROJECTS\HandsOn1-18\bin\Debug\net8.0-windows\HandsOn1-18.deps.json
+D:\ASP_PROJECTS\HandsOn1-18\bin\Debug\net8.0-windows\HandsOn1-18.runtimeconfig.json
+D:\ASP_PROJECTS\HandsOn1-18\bin\Debug\net8.0-windows\HandsOn1-18.dll
+D:\ASP_PROJECTS\HandsOn1-18\bin\Debug\net8.0-windows\HandsOn1-18.pdb
+D:\ASP_PROJECTS\HandsOn1-18\obj\Debug\net8.0-windows\HandsOn1_18.Form1.resources
+D:\ASP_PROJECTS\HandsOn1-18\obj\Debug\net8.0-windows\HandsOn1-18.vbproj.GenerateResource.cache
+D:\ASP_PROJECTS\HandsOn1-18\obj\Debug\net8.0-windows\HandsOn1-18.GeneratedMSBuildEditorConfig.editorconfig
+D:\ASP_PROJECTS\HandsOn1-18\obj\Debug\net8.0-windows\HandsOn1-18.AssemblyInfoInputs.cache
+D:\ASP_PROJECTS\HandsOn1-18\obj\Debug\net8.0-windows\HandsOn1-18.AssemblyInfo.vb
+D:\ASP_PROJECTS\HandsOn1-18\obj\Debug\net8.0-windows\HandsOn1-18.vbproj.CoreCompileInputs.cache
+D:\ASP_PROJECTS\HandsOn1-18\obj\Debug\net8.0-windows\HandsOn1-18.dll
+D:\ASP_PROJECTS\HandsOn1-18\obj\Debug\net8.0-windows\refint\HandsOn1-18.dll
+D:\ASP_PROJECTS\HandsOn1-18\obj\Debug\net8.0-windows\HandsOn1-18.pdb
+D:\ASP_PROJECTS\HandsOn1-18\obj\Debug\net8.0-windows\HandsOn1-18.genruntimeconfig.cache
+D:\ASP_PROJECTS\HandsOn1-18\obj\Debug\net8.0-windows\ref\HandsOn1-18.dll

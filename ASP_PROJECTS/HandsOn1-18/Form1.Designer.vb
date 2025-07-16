@@ -64,7 +64,7 @@ Partial Class Form1
         Controls.Add(moveBtn)
         Controls.Add(ListBox1)
         Name = "Form1"
-        Text = "ListBoxExam2"
+        Text = "ListBoxExam3Move"
         ResumeLayout(False)
     End Sub
 

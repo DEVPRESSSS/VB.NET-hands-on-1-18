@@ -1,21 +1,14 @@
 ﻿Public Class Form1
+    Private Sub enterBtn_Click(sender As Object, e As EventArgs) Handles enterBtn.Click
 
+        Dim inputText As String = TextBox1.Text
 
+        If Not String.IsNullOrWhiteSpace(inputText) Then
+            ListBox1.Items.Add(inputText)
 
-    Private Sub runBtn_Click(sender As Object, e As EventArgs) Handles runBtn.Click
-
-
-        ListBox1.Items.Clear()
-
-        For i As Integer = 8 To 1 Step -1
-
-            Dim number As Integer = i * 3
-
-            ListBox1.Items.Add(number)
-        Next
-
+        Else
+            MsgBox("Please enter a value")
+        End If
 
     End Sub
-
-
 End Class

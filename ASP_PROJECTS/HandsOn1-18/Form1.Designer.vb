@@ -53,7 +53,7 @@ Partial Class Form1
         Controls.Add(removeBtn)
         Controls.Add(ListBox1)
         Name = "Form1"
-        Text = "ListBoxExam1"
+        Text = "ListBoxExam2Removed"
         ResumeLayout(False)
     End Sub
 

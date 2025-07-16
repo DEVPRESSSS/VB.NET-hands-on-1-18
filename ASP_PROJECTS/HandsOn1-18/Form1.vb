@@ -6,12 +6,14 @@
 
         ListBox2.Items.Clear()
 
-        For i As Integer = ListBox1.Items.Count - 1 To 0 Step -1
+        For i As Integer = 1 To ListBox1.Items.Count Step 1
 
-            Dim number As Integer = ListBox1.Items(i)
-            ListBox2.Items.Add(number)
+            Dim product As Integer = i * i
+            ListBox2.Items.Add(product)
         Next
 
+
+    End Sub
 
     End Sub
 End Class

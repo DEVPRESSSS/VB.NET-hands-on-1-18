@@ -71,41 +71,41 @@ Partial Class Form1
         ' StudentTable
         ' 
         StudentTable.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        StudentTable.Location = New Point(29, 265)
+        StudentTable.Location = New Point(29, 235)
         StudentTable.Name = "StudentTable"
         StudentTable.Size = New Size(572, 218)
         StudentTable.TabIndex = 4
         ' 
         ' Addbtn
         ' 
-        Addbtn.Location = New Point(175, 163)
+        Addbtn.Location = New Point(29, 477)
         Addbtn.Name = "Addbtn"
-        Addbtn.Size = New Size(127, 23)
+        Addbtn.Size = New Size(285, 23)
         Addbtn.TabIndex = 5
         Addbtn.Text = "Add"
         Addbtn.UseVisualStyleBackColor = True
         ' 
         ' EditBtn
         ' 
-        EditBtn.Location = New Point(341, 163)
+        EditBtn.Location = New Point(313, 506)
         EditBtn.Name = "EditBtn"
-        EditBtn.Size = New Size(119, 23)
+        EditBtn.Size = New Size(288, 23)
         EditBtn.TabIndex = 6
         EditBtn.Text = "Update"
         EditBtn.UseVisualStyleBackColor = True
         ' 
         ' DeleteBtn
         ' 
-        DeleteBtn.Location = New Point(175, 210)
+        DeleteBtn.Location = New Point(175, 159)
         DeleteBtn.Name = "DeleteBtn"
-        DeleteBtn.Size = New Size(127, 23)
+        DeleteBtn.Size = New Size(288, 23)
         DeleteBtn.TabIndex = 7
         DeleteBtn.Text = "Delete"
         DeleteBtn.UseVisualStyleBackColor = True
         ' 
         ' ClearBtn
         ' 
-        ClearBtn.Location = New Point(341, 210)
+        ClearBtn.Location = New Point(175, 506)
         ClearBtn.Name = "ClearBtn"
         ClearBtn.Size = New Size(121, 23)
         ClearBtn.TabIndex = 8
@@ -150,7 +150,7 @@ Partial Class Form1
         ' 
         ' Id
         ' 
-        Id.Location = New Point(29, 236)
+        Id.Location = New Point(29, 206)
         Id.Name = "Id"
         Id.ReadOnly = True
         Id.Size = New Size(100, 23)
@@ -159,7 +159,7 @@ Partial Class Form1
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Location = New Point(29, 218)
+        Label5.Location = New Point(29, 188)
         Label5.Name = "Label5"
         Label5.Size = New Size(21, 15)
         Label5.TabIndex = 14

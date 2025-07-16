@@ -23,7 +23,6 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         ListBox1 = New ListBox()
-        ListBox2 = New ListBox()
         runBtn = New Button()
         SuspendLayout()
         ' 
@@ -31,20 +30,10 @@ Partial Class Form1
         ' 
         ListBox1.FormattingEnabled = True
         ListBox1.ItemHeight = 15
-        ListBox1.Items.AddRange(New Object() {"5", "4", "3", "2", "1"})
         ListBox1.Location = New Point(12, 72)
         ListBox1.Name = "ListBox1"
-        ListBox1.Size = New Size(148, 169)
+        ListBox1.Size = New Size(323, 169)
         ListBox1.TabIndex = 0
-        ' 
-        ' ListBox2
-        ' 
-        ListBox2.FormattingEnabled = True
-        ListBox2.ItemHeight = 15
-        ListBox2.Location = New Point(174, 72)
-        ListBox2.Name = "ListBox2"
-        ListBox2.Size = New Size(161, 169)
-        ListBox2.TabIndex = 1
         ' 
         ' runBtn
         ' 
@@ -61,15 +50,13 @@ Partial Class Form1
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(347, 246)
         Controls.Add(runBtn)
-        Controls.Add(ListBox2)
         Controls.Add(ListBox1)
         Name = "Form1"
-        Text = "LoopExam2"
+        Text = "LoopExam4"
         ResumeLayout(False)
     End Sub
 
     Friend WithEvents ListBox1 As ListBox
-    Friend WithEvents ListBox2 As ListBox
     Friend WithEvents runBtn As Button
 
 End Class

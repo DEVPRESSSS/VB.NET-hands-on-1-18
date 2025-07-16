@@ -4,14 +4,17 @@
 
     Private Sub runBtn_Click(sender As Object, e As EventArgs) Handles runBtn.Click
 
-        ListBox2.Items.Clear()
 
-        For i As Integer = ListBox1.Items.Count - 1 To 0 Step -1
 
-            Dim number As Integer = ListBox1.Items(i)
-            ListBox2.Items.Add(number)
+        For i As Integer = 1 To 8 Step 1
+
+            Dim number As Integer = i * 3
+
+            ListBox1.Items.Add(number)
         Next
 
 
     End Sub
+
+
 End Class

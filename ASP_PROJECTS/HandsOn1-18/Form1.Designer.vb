@@ -23,7 +23,8 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         ListBox1 = New ListBox()
-        removeBtn = New Button()
+        moveBtn = New Button()
+        ListBox2 = New ListBox()
         SuspendLayout()
         ' 
         ' ListBox1
@@ -33,31 +34,42 @@ Partial Class Form1
         ListBox1.Items.AddRange(New Object() {"hey", "heys", "heyss"})
         ListBox1.Location = New Point(12, 79)
         ListBox1.Name = "ListBox1"
-        ListBox1.Size = New Size(323, 139)
+        ListBox1.Size = New Size(147, 139)
         ListBox1.TabIndex = 0
         ' 
-        ' removeBtn
+        ' moveBtn
         ' 
-        removeBtn.Location = New Point(12, 41)
-        removeBtn.Name = "removeBtn"
-        removeBtn.Size = New Size(75, 23)
-        removeBtn.TabIndex = 2
-        removeBtn.Text = "Remove"
-        removeBtn.UseVisualStyleBackColor = True
+        moveBtn.Location = New Point(12, 41)
+        moveBtn.Name = "moveBtn"
+        moveBtn.Size = New Size(75, 23)
+        moveBtn.TabIndex = 2
+        moveBtn.Text = "Move"
+        moveBtn.UseVisualStyleBackColor = True
+        ' 
+        ' ListBox2
+        ' 
+        ListBox2.FormattingEnabled = True
+        ListBox2.ItemHeight = 15
+        ListBox2.Location = New Point(180, 79)
+        ListBox2.Name = "ListBox2"
+        ListBox2.Size = New Size(155, 139)
+        ListBox2.TabIndex = 3
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(347, 246)
-        Controls.Add(removeBtn)
+        Controls.Add(ListBox2)
+        Controls.Add(moveBtn)
         Controls.Add(ListBox1)
         Name = "Form1"
-        Text = "ListBoxExam1"
+        Text = "ListBoxExam2"
         ResumeLayout(False)
     End Sub
 
     Friend WithEvents ListBox1 As ListBox
-    Friend WithEvents removeBtn As Button
+    Friend WithEvents moveBtn As Button
+    Friend WithEvents ListBox2 As ListBox
 
 End Class

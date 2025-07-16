@@ -26,6 +26,8 @@
 
                 effectTxt.Text = "No damage"
             End If
+        Else
+            effectTxt.Clear()
         End If
     End Sub
 

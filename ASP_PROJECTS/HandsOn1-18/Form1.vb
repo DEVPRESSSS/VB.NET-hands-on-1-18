@@ -12,42 +12,53 @@ Public Class Form1
         Id.Clear()
     End Sub
 
-    'Private Sub Addbtn_Click(sender As Object, e As EventArgs) Handles Addbtn.Click
+    Private Sub Addbtn_Click(sender As Object, e As EventArgs) Handles Addbtn.Click
 
-    '    Dim connection As New OleDbConnection(connectionString)
+        Dim connection As New OleDbConnection(connectionString)
 
-    '    Try
-    '        connection.Open()
+        Try
+            connection.Open()
 
-    '        Dim fullName As String = fullNameTxt.Text
-    '        Dim course As String = CourseTxt.Text
-    '        Dim setInput As String = SetTxt.Text
-    '        Dim idNumber As String = IdNumberTxt.Text
+            Dim fullName As String = fullNameTxt.Text
+            Dim course As String = CourseTxt.Text
+            Dim setInput As String = SetTxt.Text
+            Dim idNumber As String = IdNumberTxt.Text
 
-    '        Dim query As String = "INSERT INTO StudentInfo (FullName, Course, [Set], IdNumber) VALUES (?, ?, ?, ?)"
-    '        Dim cmd As New OleDbCommand(query, connection)
 
-    '        cmd.Parameters.AddWithValue("?", fullName)
-    '        cmd.Parameters.AddWithValue("?", course)
-    '        cmd.Parameters.AddWithValue("?", setInput)
-    '        cmd.Parameters.AddWithValue("?", idNumber)
+            If String.IsNullOrWhiteSpace(fullName) OrElse
+               String.IsNullOrWhiteSpace(course) OrElse
+               String.IsNullOrWhiteSpace(setInput) OrElse
+               String.IsNullOrWhiteSpace(idNumber) Then
 
-    '        Dim result As Integer = cmd.ExecuteNonQuery()
+                MessageBox.Show("Please fill out all fields properly.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                Exit Sub
+            End If
 
-    '        If result > 0 Then
-    '            MessageBox.Show("Student info inserted successfully!")
-    '            LoadStudentData()
-    '        Else
-    '            MessageBox.Show("Insert failed.")
-    '        End If
 
-    '        connection.Close()
+            Dim query As String = "INSERT INTO StudentInfo (FullName, Course, [Set], IdNumber) VALUES (?, ?, ?, ?)"
+            Dim cmd As New OleDbCommand(query, connection)
 
-    '    Catch ex As Exception
-    '        MessageBox.Show("Error: " & ex.Message)
-    '    End Try
+            cmd.Parameters.AddWithValue("?", fullName)
+            cmd.Parameters.AddWithValue("?", course)
+            cmd.Parameters.AddWithValue("?", setInput)
+            cmd.Parameters.AddWithValue("?", idNumber)
 
-    'End Sub
+            Dim result As Integer = cmd.ExecuteNonQuery()
+
+            If result > 0 Then
+                MessageBox.Show("Student info inserted successfully!")
+                LoadStudentData()
+            Else
+                MessageBox.Show("Insert failed.")
+            End If
+
+            connection.Close()
+
+        Catch ex As Exception
+            MessageBox.Show("Error: " & ex.Message)
+        End Try
+
+    End Sub
 
     Private Sub LoadStudentData()
         Dim connection As New OleDbConnection(connectionString)
@@ -126,43 +137,43 @@ Public Class Form1
         End If
     End Sub
 
-    Private Sub DeleteBtn_Click(sender As Object, e As EventArgs) Handles DeleteBtn.Click
-        Dim connection As New OleDbConnection(connectionString)
+    'Private Sub DeleteBtn_Click(sender As Object, e As EventArgs) Handles DeleteBtn.Click
+    '    Dim connection As New OleDbConnection(connectionString)
 
-        Try
-            If String.IsNullOrWhiteSpace(IdNumberTxt.Text) Then
-                MessageBox.Show("Please select a student to delete.")
-                Return
-            End If
+    '    Try
+    '        If String.IsNullOrWhiteSpace(IdNumberTxt.Text) Then
+    '            MessageBox.Show("Please select a student to delete.")
+    '            Return
+    '        End If
 
-            Dim confirm As DialogResult = MessageBox.Show("Are you sure you want to delete this student?", "Confirm Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
+    '        Dim confirm As DialogResult = MessageBox.Show("Are you sure you want to delete this student?", "Confirm Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
 
-            If confirm = DialogResult.Yes Then
-                connection.Open()
+    '        If confirm = DialogResult.Yes Then
+    '            connection.Open()
 
-                Dim idNumber As String = Id.Text
-                Dim query As String = "DELETE FROM StudentInfo WHERE ID = ?"
-                Dim cmd As New OleDbCommand(query, connection)
+    '            Dim idNumber As String = Id.Text
+    '            Dim query As String = "DELETE FROM StudentInfo WHERE ID = ?"
+    '            Dim cmd As New OleDbCommand(query, connection)
 
-                cmd.Parameters.AddWithValue("?", idNumber)
+    '            cmd.Parameters.AddWithValue("?", idNumber)
 
-                Dim result As Integer = cmd.ExecuteNonQuery()
+    '            Dim result As Integer = cmd.ExecuteNonQuery()
 
-                If result > 0 Then
-                    MessageBox.Show("Student deleted successfully!")
-                    LoadStudentData()
+    '            If result > 0 Then
+    '                MessageBox.Show("Student deleted successfully!")
+    '                LoadStudentData()
 
-                Else
-                    MessageBox.Show("Delete failed. Record not found.")
-                End If
+    '            Else
+    '                MessageBox.Show("Delete failed. Record not found.")
+    '            End If
 
-                connection.Close()
-            End If
+    '            connection.Close()
+    '        End If
 
-        Catch ex As Exception
-            MessageBox.Show("Error: " & ex.Message)
-        End Try
-    End Sub
+    '    Catch ex As Exception
+    '        MessageBox.Show("Error: " & ex.Message)
+    '    End Try
+    'End Sub
 
     Private Sub fullNameTxt_KeyPress(sender As Object, e As KeyPressEventArgs) Handles fullNameTxt.KeyPress
 

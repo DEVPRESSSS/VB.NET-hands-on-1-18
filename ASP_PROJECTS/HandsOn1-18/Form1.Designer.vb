@@ -78,7 +78,7 @@ Partial Class Form1
         ' 
         ' Addbtn
         ' 
-        Addbtn.Location = New Point(29, 477)
+        Addbtn.Location = New Point(175, 160)
         Addbtn.Name = "Addbtn"
         Addbtn.Size = New Size(285, 23)
         Addbtn.TabIndex = 5
@@ -96,7 +96,7 @@ Partial Class Form1
         ' 
         ' DeleteBtn
         ' 
-        DeleteBtn.Location = New Point(175, 159)
+        DeleteBtn.Location = New Point(320, 477)
         DeleteBtn.Name = "DeleteBtn"
         DeleteBtn.Size = New Size(288, 23)
         DeleteBtn.TabIndex = 7
@@ -150,7 +150,7 @@ Partial Class Form1
         ' 
         ' Id
         ' 
-        Id.Location = New Point(29, 206)
+        Id.Location = New Point(39, 506)
         Id.Name = "Id"
         Id.ReadOnly = True
         Id.Size = New Size(100, 23)
@@ -159,7 +159,7 @@ Partial Class Form1
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Location = New Point(29, 188)
+        Label5.Location = New Point(48, 477)
         Label5.Name = "Label5"
         Label5.Size = New Size(21, 15)
         Label5.TabIndex = 14

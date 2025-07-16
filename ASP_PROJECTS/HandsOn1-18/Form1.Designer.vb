@@ -78,7 +78,7 @@ Partial Class Form1
         ' 
         ' Addbtn
         ' 
-        Addbtn.Location = New Point(175, 163)
+        Addbtn.Location = New Point(29, 506)
         Addbtn.Name = "Addbtn"
         Addbtn.Size = New Size(127, 23)
         Addbtn.TabIndex = 5
@@ -96,7 +96,7 @@ Partial Class Form1
         ' 
         ' DeleteBtn
         ' 
-        DeleteBtn.Location = New Point(175, 210)
+        DeleteBtn.Location = New Point(162, 506)
         DeleteBtn.Name = "DeleteBtn"
         DeleteBtn.Size = New Size(127, 23)
         DeleteBtn.TabIndex = 7
@@ -105,7 +105,7 @@ Partial Class Form1
         ' 
         ' ClearBtn
         ' 
-        ClearBtn.Location = New Point(341, 210)
+        ClearBtn.Location = New Point(304, 506)
         ClearBtn.Name = "ClearBtn"
         ClearBtn.Size = New Size(121, 23)
         ClearBtn.TabIndex = 8

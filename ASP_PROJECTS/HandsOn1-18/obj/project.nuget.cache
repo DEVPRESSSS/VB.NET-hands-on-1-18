@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "INQNMIYvsdPsxaXL9JsWkfeSroioLcuDVoGer3IQ9S1QOh05szSfLZQbugwDVbW/4icUQDX63epEGjaSAoVkmw==",
+  "dgSpecHash": "ZQdFJwooe2V/1H0prHMy3rCoLlqz4aOp3d1ustDw8cXJAl/FLgwWp0qkwWBJeE0Zy+BraKS5ywGucrL+ipYxzg==",
   "success": true,
   "projectFilePath": "D:\\ASP_PROJECTS\\HandsOn1-18\\HandsOn1-18.vbproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\xmont\\.nuget\\packages\\system.configuration.configurationmanager\\9.0.7\\system.configuration.configurationmanager.9.0.7.nupkg.sha512",
+    "C:\\Users\\xmont\\.nuget\\packages\\system.data.oledb\\9.0.7\\system.data.oledb.9.0.7.nupkg.sha512",
+    "C:\\Users\\xmont\\.nuget\\packages\\system.diagnostics.eventlog\\9.0.7\\system.diagnostics.eventlog.9.0.7.nupkg.sha512",
+    "C:\\Users\\xmont\\.nuget\\packages\\system.diagnostics.performancecounter\\9.0.7\\system.diagnostics.performancecounter.9.0.7.nupkg.sha512",
+    "C:\\Users\\xmont\\.nuget\\packages\\system.security.cryptography.protecteddata\\9.0.7\\system.security.cryptography.protecteddata.9.0.7.nupkg.sha512"
+  ],
   "logs": []
 }

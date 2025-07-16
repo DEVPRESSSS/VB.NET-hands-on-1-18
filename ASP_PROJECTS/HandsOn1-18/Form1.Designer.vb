@@ -61,7 +61,7 @@ Partial Class Form1
         Controls.Add(enterBtn)
         Controls.Add(ListBox1)
         Name = "Form1"
-        Text = "LoopExam5"
+        Text = "ListBoxExam1Add"
         ResumeLayout(False)
         PerformLayout()
     End Sub

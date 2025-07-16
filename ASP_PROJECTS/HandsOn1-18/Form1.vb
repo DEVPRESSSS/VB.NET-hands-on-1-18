@@ -5,6 +5,7 @@
 
         If Not String.IsNullOrWhiteSpace(inputText) Then
             ListBox1.Items.Add(inputText)
+            TextBox1.Clear()
 
         Else
             MsgBox("Please enter a value")

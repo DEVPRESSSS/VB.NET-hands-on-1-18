@@ -23,43 +23,43 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Label1 = New Label()
-        typeTxt = New TextBox()
+        effectTxt = New TextBox()
         Label2 = New Label()
-        letterInputTxt = New TextBox()
+        magnitudeTxt = New TextBox()
         SuspendLayout()
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(86, 63)
+        Label1.Location = New Point(72, 63)
         Label1.Name = "Label1"
-        Label1.Size = New Size(40, 15)
+        Label1.Size = New Size(68, 15)
         Label1.TabIndex = 0
-        Label1.Text = "Letter:"
+        Label1.Text = "Magnitude:"
         ' 
-        ' typeTxt
+        ' effectTxt
         ' 
-        typeTxt.Location = New Point(148, 101)
-        typeTxt.Name = "typeTxt"
-        typeTxt.ReadOnly = True
-        typeTxt.Size = New Size(115, 23)
-        typeTxt.TabIndex = 2
+        effectTxt.Location = New Point(148, 101)
+        effectTxt.Name = "effectTxt"
+        effectTxt.ReadOnly = True
+        effectTxt.Size = New Size(115, 23)
+        effectTxt.TabIndex = 2
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(106, 104)
+        Label2.Location = New Point(100, 104)
         Label2.Name = "Label2"
-        Label2.Size = New Size(34, 15)
+        Label2.Size = New Size(40, 15)
         Label2.TabIndex = 3
-        Label2.Text = "Type:"
+        Label2.Text = "Effect:"
         ' 
-        ' letterInputTxt
+        ' magnitudeTxt
         ' 
-        letterInputTxt.Location = New Point(146, 60)
-        letterInputTxt.Name = "letterInputTxt"
-        letterInputTxt.Size = New Size(117, 23)
-        letterInputTxt.TabIndex = 1
+        magnitudeTxt.Location = New Point(146, 60)
+        magnitudeTxt.Name = "magnitudeTxt"
+        magnitudeTxt.Size = New Size(117, 23)
+        magnitudeTxt.TabIndex = 1
         ' 
         ' Form1
         ' 
@@ -67,18 +67,18 @@ Partial Class Form1
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(347, 246)
         Controls.Add(Label2)
-        Controls.Add(typeTxt)
-        Controls.Add(letterInputTxt)
+        Controls.Add(effectTxt)
+        Controls.Add(magnitudeTxt)
         Controls.Add(Label1)
         Name = "Form1"
-        Text = "Ship1"
+        Text = "Earthquake"
         ResumeLayout(False)
         PerformLayout()
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents typeTxt As TextBox
+    Friend WithEvents effectTxt As TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents letterInputTxt As TextBox
+    Friend WithEvents magnitudeTxt As TextBox
 
 End Class

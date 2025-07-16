@@ -22,63 +22,54 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Label1 = New Label()
-        effectTxt = New TextBox()
-        Label2 = New Label()
-        magnitudeTxt = New TextBox()
+        ListBox1 = New ListBox()
+        ListBox2 = New ListBox()
+        runBtn = New Button()
         SuspendLayout()
         ' 
-        ' Label1
+        ' ListBox1
         ' 
-        Label1.AutoSize = True
-        Label1.Location = New Point(72, 63)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(68, 15)
-        Label1.TabIndex = 0
-        Label1.Text = "Magnitude:"
+        ListBox1.FormattingEnabled = True
+        ListBox1.ItemHeight = 15
+        ListBox1.Items.AddRange(New Object() {"1", "2", "3", "4", "5"})
+        ListBox1.Location = New Point(12, 72)
+        ListBox1.Name = "ListBox1"
+        ListBox1.Size = New Size(148, 169)
+        ListBox1.TabIndex = 0
         ' 
-        ' effectTxt
+        ' ListBox2
         ' 
-        effectTxt.Location = New Point(148, 101)
-        effectTxt.Name = "effectTxt"
-        effectTxt.ReadOnly = True
-        effectTxt.Size = New Size(115, 23)
-        effectTxt.TabIndex = 2
+        ListBox2.FormattingEnabled = True
+        ListBox2.ItemHeight = 15
+        ListBox2.Location = New Point(174, 72)
+        ListBox2.Name = "ListBox2"
+        ListBox2.Size = New Size(161, 169)
+        ListBox2.TabIndex = 1
         ' 
-        ' Label2
+        ' runBtn
         ' 
-        Label2.AutoSize = True
-        Label2.Location = New Point(100, 104)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(40, 15)
-        Label2.TabIndex = 3
-        Label2.Text = "Effect:"
-        ' 
-        ' magnitudeTxt
-        ' 
-        magnitudeTxt.Location = New Point(146, 60)
-        magnitudeTxt.Name = "magnitudeTxt"
-        magnitudeTxt.Size = New Size(117, 23)
-        magnitudeTxt.TabIndex = 1
+        runBtn.Location = New Point(12, 41)
+        runBtn.Name = "runBtn"
+        runBtn.Size = New Size(75, 23)
+        runBtn.TabIndex = 2
+        runBtn.Text = "Run"
+        runBtn.UseVisualStyleBackColor = True
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(347, 246)
-        Controls.Add(Label2)
-        Controls.Add(effectTxt)
-        Controls.Add(magnitudeTxt)
-        Controls.Add(Label1)
+        Controls.Add(runBtn)
+        Controls.Add(ListBox2)
+        Controls.Add(ListBox1)
         Name = "Form1"
-        Text = "Earthquake"
+        Text = "LoopExam1"
         ResumeLayout(False)
-        PerformLayout()
     End Sub
 
-    Friend WithEvents Label1 As Label
-    Friend WithEvents effectTxt As TextBox
-    Friend WithEvents Label2 As Label
-    Friend WithEvents magnitudeTxt As TextBox
+    Friend WithEvents ListBox1 As ListBox
+    Friend WithEvents ListBox2 As ListBox
+    Friend WithEvents runBtn As Button
 
 End Class

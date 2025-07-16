@@ -23,51 +23,41 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         ListBox1 = New ListBox()
-        enterBtn = New Button()
-        TextBox1 = New TextBox()
+        removeBtn = New Button()
         SuspendLayout()
         ' 
         ' ListBox1
         ' 
         ListBox1.FormattingEnabled = True
         ListBox1.ItemHeight = 15
-        ListBox1.Location = New Point(12, 102)
+        ListBox1.Items.AddRange(New Object() {"hey", "heys", "heyss"})
+        ListBox1.Location = New Point(12, 79)
         ListBox1.Name = "ListBox1"
         ListBox1.Size = New Size(323, 139)
         ListBox1.TabIndex = 0
         ' 
-        ' enterBtn
+        ' removeBtn
         ' 
-        enterBtn.Location = New Point(12, 41)
-        enterBtn.Name = "enterBtn"
-        enterBtn.Size = New Size(75, 23)
-        enterBtn.TabIndex = 2
-        enterBtn.Text = "Enter"
-        enterBtn.UseVisualStyleBackColor = True
-        ' 
-        ' TextBox1
-        ' 
-        TextBox1.Location = New Point(14, 74)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(321, 23)
-        TextBox1.TabIndex = 3
+        removeBtn.Location = New Point(12, 41)
+        removeBtn.Name = "removeBtn"
+        removeBtn.Size = New Size(75, 23)
+        removeBtn.TabIndex = 2
+        removeBtn.Text = "Remove"
+        removeBtn.UseVisualStyleBackColor = True
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(347, 246)
-        Controls.Add(TextBox1)
-        Controls.Add(enterBtn)
+        Controls.Add(removeBtn)
         Controls.Add(ListBox1)
         Name = "Form1"
-        Text = "LoopExam5"
+        Text = "ListBoxExam1"
         ResumeLayout(False)
-        PerformLayout()
     End Sub
 
     Friend WithEvents ListBox1 As ListBox
-    Friend WithEvents enterBtn As Button
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents removeBtn As Button
 
 End Class

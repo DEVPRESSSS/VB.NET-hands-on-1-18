@@ -1,14 +1,11 @@
 ﻿Public Class Form1
-    Private Sub enterBtn_Click(sender As Object, e As EventArgs) Handles enterBtn.Click
+    Private Sub removeBtn_Click(sender As Object, e As EventArgs) Handles removeBtn.Click
 
-        Dim inputText As String = TextBox1.Text
+        If ListBox1.SelectedIndex <> -1 Then
 
-        If Not String.IsNullOrWhiteSpace(inputText) Then
-            ListBox1.Items.Add(inputText)
+            Dim selectedItem As String = ListBox1.SelectedItem
+            ListBox1.Items.Remove(selectedItem)
 
-        Else
-            MsgBox("Please enter a value")
         End If
-
     End Sub
 End Class

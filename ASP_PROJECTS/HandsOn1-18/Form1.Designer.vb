@@ -31,7 +31,7 @@ Partial Class Form1
         ' 
         ListBox1.FormattingEnabled = True
         ListBox1.ItemHeight = 15
-        ListBox1.Items.AddRange(New Object() {"1", "2", "3", "4", "5"})
+        ListBox1.Items.AddRange(New Object() {"5", "4", "3", "2", "1"})
         ListBox1.Location = New Point(12, 72)
         ListBox1.Name = "ListBox1"
         ListBox1.Size = New Size(148, 169)
@@ -64,7 +64,7 @@ Partial Class Form1
         Controls.Add(ListBox2)
         Controls.Add(ListBox1)
         Name = "Form1"
-        Text = "LoopExam1"
+        Text = "LoopExam2"
         ResumeLayout(False)
     End Sub
 

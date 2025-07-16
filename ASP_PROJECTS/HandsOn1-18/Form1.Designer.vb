@@ -23,43 +23,44 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Label1 = New Label()
-        effectTxt = New TextBox()
+        equivalentTxt = New TextBox()
         Label2 = New Label()
-        magnitudeTxt = New TextBox()
+        gradeTxt = New TextBox()
         SuspendLayout()
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(72, 63)
+        Label1.Location = New Point(99, 63)
         Label1.Name = "Label1"
-        Label1.Size = New Size(68, 15)
+        Label1.Size = New Size(41, 15)
         Label1.TabIndex = 0
-        Label1.Text = "Magnitude:"
+        Label1.Text = "Grade:"
+        Label1.TextAlign = ContentAlignment.TopCenter
         ' 
-        ' effectTxt
+        ' equivalentTxt
         ' 
-        effectTxt.Location = New Point(148, 101)
-        effectTxt.Name = "effectTxt"
-        effectTxt.ReadOnly = True
-        effectTxt.Size = New Size(115, 23)
-        effectTxt.TabIndex = 2
+        equivalentTxt.Location = New Point(148, 101)
+        equivalentTxt.Name = "equivalentTxt"
+        equivalentTxt.ReadOnly = True
+        equivalentTxt.Size = New Size(115, 23)
+        equivalentTxt.TabIndex = 2
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(100, 104)
+        Label2.Location = New Point(77, 104)
         Label2.Name = "Label2"
-        Label2.Size = New Size(40, 15)
+        Label2.Size = New Size(65, 15)
         Label2.TabIndex = 3
-        Label2.Text = "Effect:"
+        Label2.Text = "Equivalent:"
         ' 
-        ' magnitudeTxt
+        ' gradeTxt
         ' 
-        magnitudeTxt.Location = New Point(146, 60)
-        magnitudeTxt.Name = "magnitudeTxt"
-        magnitudeTxt.Size = New Size(117, 23)
-        magnitudeTxt.TabIndex = 1
+        gradeTxt.Location = New Point(146, 60)
+        gradeTxt.Name = "gradeTxt"
+        gradeTxt.Size = New Size(117, 23)
+        gradeTxt.TabIndex = 1
         ' 
         ' Form1
         ' 
@@ -67,18 +68,18 @@ Partial Class Form1
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(347, 246)
         Controls.Add(Label2)
-        Controls.Add(effectTxt)
-        Controls.Add(magnitudeTxt)
+        Controls.Add(equivalentTxt)
+        Controls.Add(gradeTxt)
         Controls.Add(Label1)
         Name = "Form1"
-        Text = "Earthquake"
+        Text = "Grading System"
         ResumeLayout(False)
         PerformLayout()
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents effectTxt As TextBox
+    Friend WithEvents equivalentTxt As TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents magnitudeTxt As TextBox
+    Friend WithEvents gradeTxt As TextBox
 
 End Class

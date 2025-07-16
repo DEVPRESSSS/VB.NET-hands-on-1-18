@@ -1,36 +1,59 @@
 ﻿Public Class Form1
 
-    Private Sub magnitudeTxt_TextChanged(sender As Object, e As EventArgs) Handles magnitudeTxt.TextChanged
 
-        Dim magnitudeInput As Double
+    Private Sub gradeTxt_TextChanged(sender As Object, e As EventArgs) Handles gradeTxt.TextChanged
+        Dim grade As Integer
 
-        If Double.TryParse(magnitudeTxt.Text, magnitudeInput) Then
+        If Integer.TryParse(gradeTxt.Text, grade) Then
+            If grade >= 98 AndAlso grade <= 100 Then
 
-            If magnitudeInput > 7.5 Then
+                equivalentTxt.Text = "1.00"
 
-                effectTxt.Text = "Catastrophe"
+            ElseIf grade >= 95 AndAlso grade <= 97 Then
 
-            ElseIf magnitudeInput >= 6.6 And magnitudeInput <= 7.5 Then
+                equivalentTxt.Text = "1.25"
 
-                effectTxt.Text = "Disaster"
+            ElseIf grade >= 92 AndAlso grade <= 94 Then
 
-            ElseIf magnitudeInput >= 5.6 And magnitudeInput <= 6.5 Then
+                equivalentTxt.Text = "1.50"
 
-                effectTxt.Text = "Serious damage"
+            ElseIf grade >= 89 AndAlso grade <= 91 Then
 
-            ElseIf magnitudeInput >= 5 And magnitudeInput <= 5.5 Then
+                equivalentTxt.Text = "1.75"
 
-                effectTxt.Text = "Some damage"
+            ElseIf grade >= 85 AndAlso grade <= 88 Then
+
+                equivalentTxt.Text = "2.00"
+
+            ElseIf grade >= 82 AndAlso grade <= 84 Then
+
+                equivalentTxt.Text = "2.25"
+
+            ElseIf grade >= 80 AndAlso grade <= 81 Then
+
+                equivalentTxt.Text = "2.50"
+
+            ElseIf grade >= 77 AndAlso grade <= 79 Then
+
+                equivalentTxt.Text = "2.75"
+
+            ElseIf grade >= 75 AndAlso grade <= 76 Then
+
+                equivalentTxt.Text = "3.00"
+
+            ElseIf grade >= 0 AndAlso grade <= 74 Then
+
+                equivalentTxt.Text = "Failed"
 
             Else
-
-                effectTxt.Text = "No damage"
+                equivalentTxt.Text = "Invalid Grade"
             End If
+        Else
+            equivalentTxt.Clear()
         End If
     End Sub
 
-    Private Sub magnitudeTxt_KeyPress(sender As Object, e As KeyPressEventArgs) Handles magnitudeTxt.KeyPress
-
+    Private Sub equivalentTxt_KeyPress(sender As Object, e As KeyPressEventArgs) Handles equivalentTxt.KeyPress
         If Char.IsControl(e.KeyChar) Then
             Return
         End If
@@ -39,10 +62,9 @@
             Return
         End If
 
-        If e.KeyChar = "."c AndAlso Not magnitudeTxt.Text.Contains(".") Then
+        If e.KeyChar = "."c AndAlso Not gradeTxt.Text.Contains(".") Then
             Return
         End If
         e.Handled = True
-
     End Sub
 End Class
